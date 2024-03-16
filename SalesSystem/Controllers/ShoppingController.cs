@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Data;
 using System;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace SalesSystem.Controllers
 {
@@ -30,35 +31,31 @@ namespace SalesSystem.Controllers
             return View(oLista);
         }
 
-        /*[HttpGet]
-        public List<TArticulo> Listar()
-        {
-            var oLista = _ArticuloDatos.Listar();
-            return oLista;
-        }*/
-
         [HttpPost]
-        public ActionResult NuevoArticulo(TArticulo oArticulo)
+        public ActionResult NuevoArticulo([FromBody] object data)
         {
-           if (!ModelState.IsValid)
-               return View();
+            if (!ModelState.IsValid)
+                return View();
 
+            // Deserializa la cadena JSON en un objeto TArticulo
+            TArticulo articulo = JsonConvert.DeserializeObject<TArticulo>(data.ToString());
 
-            var respuesta = _ArticuloDatos.Guardar(oArticulo);
+            // Ahora puedes usar el objeto articulo como desees
+            var respuesta = _ArticuloDatos.Guardar(articulo);
 
             if (respuesta)
                 return RedirectToAction("NuevoArticulo");
             else
                 return View();
-        }
-        
+        }        
+
         [HttpGet]
         public TArticulo Obtener(string codigo)
         {
-            var oarticulo = _ArticuloDatos.Obtener(codigo);            
+            var oarticulo = _ArticuloDatos.Obtener(codigo);
             return oarticulo;
         }
-        
+
 
 
         [HttpPut]

@@ -63,7 +63,7 @@ namespace SalesSystem.Data
                         oArticulo.Codigo = dr["Codigo"].ToString();
                         oArticulo.NombreArticulo = dr["NombreArticulo"].ToString();
                         oArticulo.PrecioArticulo = Convert.ToDecimal(dr["PrecioArticulo"]);
-                        oArticulo.AplicarIVA = Convert.ToByte(dr["AplicarIVA"]);
+                        oArticulo.AplicarIVA = Convert.ToBoolean(dr["AplicarIVA"]);
                         oArticulo.PrecioConIVA = Convert.ToDecimal(dr["PrecioConIVA"]);
                     }
                 }

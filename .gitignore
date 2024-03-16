@@ -37,3 +37,5 @@
 /SalesSystem/bin/Debug/net6.0/appsettings.json
 /.vs/SalesSystem/FileContentIndex/fad053c5-de2c-4b85-acaf-905a045143c7.vsidx
 /.vs/SalesSystem/config/applicationhost.config
+*.vsidx
+/SalesSystem/obj/Debug/net6.0/project.razor.vs.bin
