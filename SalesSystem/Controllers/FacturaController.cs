@@ -50,7 +50,7 @@ namespace SalesSystem.Controllers
 
             foreach (var fila in filas)
             {
-                oFactura.CodigoArticulo = fila["columna1"];
+                //oFactura.CodigoArticulo = fila["columna1"];
               /*  oFactura.UsuarioFactura = fila["columna2"];
                 oFactura.CantidadArticulo = Convert.ToUInt32( fila["columna3"]);
                 oFactura.ConsecutivoFactura = fila["columna4"];*/
@@ -93,7 +93,7 @@ namespace SalesSystem.Controllers
         public ActionResult Eliminar(TFactura oFactura)
         {
 
-            var respuesta = _FacturaDatos.Eliminar(oFactura.CodigoArticulo, oFactura.ConsecutivoFactura);
+            var respuesta = _FacturaDatos.Eliminar(oFactura.ConsecutivoFactura);
 
             if (respuesta)
                 return RedirectToAction("Listar");

@@ -28,9 +28,7 @@ namespace SalesSystem.Data
                     {
                         oLista.Add(new TFactura()
                         {
-                            CodigoArticulo = dr["CodigoArticulo"].ToString(),
                             UsuarioFactura = Convert.ToInt32(dr["UsuarioFactura"]),
-                            CantidadArticulo = Convert.ToInt32(dr["CantidadArticulo"]),
                             ConsecutivoFactura = Convert.ToInt32(dr["ConsecutivoFactura"]),
                             FechaFactura = (DateTime)dr["FechaFactura"],
                             DetallesFactura = dr["DetallesFactura"].ToString()
@@ -71,7 +69,7 @@ namespace SalesSystem.Data
 
             return oArticulo;
         }
-        public TFactura ObtenerFactura(string codFactura)
+        public TFactura ObtenerFactura(int consecutivo)
         {
 
             var oFactura = new TFactura();
@@ -82,7 +80,7 @@ namespace SalesSystem.Data
             {
                 conexion.Open();
                 SqlCommand cmd = new SqlCommand("sp_ObtenerFactura", conexion);
-                cmd.Parameters.AddWithValue("CodigoArticulo", codFactura);
+                cmd.Parameters.AddWithValue("ConsecutivoFactura", consecutivo);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 using (var dr = cmd.ExecuteReader())
@@ -90,9 +88,7 @@ namespace SalesSystem.Data
 
                     while (dr.Read())
                     {
-                        oFactura.CodigoArticulo = dr["CodigoArticulo"].ToString();
                         oFactura.UsuarioFactura = Convert.ToInt32(dr["UsuarioFactura"]);
-                        oFactura.CantidadArticulo = Convert.ToInt32(dr["CantidadArticulo"]);
                         oFactura.ConsecutivoFactura = Convert.ToInt32(dr["ConsecutivoFactura"]);
                         oFactura.FechaFactura = (DateTime)dr["FechaFactura"];
                         oFactura.DetallesFactura = dr["DetallesFactura"].ToString();
@@ -115,9 +111,7 @@ namespace SalesSystem.Data
                 {
                     conexion.Open();
                     SqlCommand cmd = new SqlCommand("sp_CrearArticuloFactura", conexion);
-                    cmd.Parameters.AddWithValue("CodigoArticulo", oFactura.CodigoArticulo);
                     cmd.Parameters.AddWithValue("UsuarioFactura", oFactura.UsuarioFactura);
-                    cmd.Parameters.AddWithValue("CantidadArticulo", oFactura.CantidadArticulo);
                     cmd.Parameters.AddWithValue("ConsecutivoFactura", oFactura.ConsecutivoFactura);
                     cmd.Parameters.AddWithValue("FechaFactura", DateTime.Now);
                     cmd.Parameters.AddWithValue("DetallesFactura", oFactura.DetallesFactura);
@@ -153,9 +147,7 @@ namespace SalesSystem.Data
                 {
                     conexion.Open();
                     SqlCommand cmd = new SqlCommand("sp_EditarFactura", conexion);
-                    cmd.Parameters.AddWithValue("CodigoArticulo", oFactura.CodigoArticulo);
                     cmd.Parameters.AddWithValue("UsuarioFactura", oFactura.UsuarioFactura);
-                    cmd.Parameters.AddWithValue("CantidadArticulo", oFactura.CantidadArticulo);
                     cmd.Parameters.AddWithValue("ConsecutivoFactura", oFactura.ConsecutivoFactura);
                     cmd.Parameters.AddWithValue("FechaFactura", oFactura.FechaFactura);
                     cmd.Parameters.AddWithValue("DetallesFactura", oFactura.DetallesFactura);
@@ -175,7 +167,7 @@ namespace SalesSystem.Data
             return rpta;
         }
 
-        public bool Eliminar(string codFactura, int consecutivo)
+        public bool Eliminar(int consecutivo)
         {
             bool rpta;
 
@@ -187,7 +179,6 @@ namespace SalesSystem.Data
                 {
                     conexion.Open();
                     SqlCommand cmd = new SqlCommand("sp_EliminarFactura", conexion);
-                    cmd.Parameters.AddWithValue("CodigoArticulo", codFactura);
                     cmd.Parameters.AddWithValue("ConsecutivoFactura", consecutivo);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.ExecuteNonQuery();
