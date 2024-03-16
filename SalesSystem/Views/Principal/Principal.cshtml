@@ -1,0 +1,33 @@
+﻿@model Principal
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/landingPage.css" />
+</head>
+
+    <section>
+        <div class="circle"></div>
+        <header>
+            <ul>
+                <li>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Principal" asp-action="Principal">Inicio</a>
+                </li>
+                <li>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Shopping" asp-action="Shopping">Articulos</a>
+                </li>
+                <li>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Factura" asp-action="Factura">Factura</a>
+                </li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="text-box">
+            <h2>Sistema de ventas y facturaciòn <br><span>Bienvenido</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor modi consequatur nulla, fugit odit rerum quaerat illo at! Nihil velit tempore debitis. Doloribus quasi perspiciatis fuga nulla aspernatur necessitatibus adipisci.</p>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Shopping" asp-action="Shopping">Ver productos</a>
+            </div>
+        </div>
+    </section>
+

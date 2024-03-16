@@ -1,0 +1,79 @@
+﻿<form id="myForm">
+    <div class="row">
+        <div class="form-group">
+            <label>Codigo </label>
+            <input type="text" id="codigo" placeholder="" name="Codigo" class="form-control" autofocus autocomplete="off" />
+        </div>
+        <div class="form-group">
+            <label>Nombre </label>
+            <input type="text" id="idNameDetails" placeholder="" class="form-control" autofocus autocomplete="off" readonly />
+        </div>
+        <div class="form-group">
+            <label>Cantidad</label>
+            <input type="text" id="idQuatityDetails" placeholder="" class="form-control" autofocus autocomplete="off" />
+        </div>
+        &nbsp;&nbsp;
+        <div class="form-group">
+            <button type="submit" id="idAdd" class="btn btn-outline-info btn" disabled>Agregar</button>
+        </div>
+        <div style="display:none">
+            <label>Precio</label>
+            <input type="text" id="idprecio"/>
+        </div>
+    </div>
+</form>
+
+<script>
+    document.getElementById("codigo").onchange = function () {
+        alerta();        
+    };
+
+    function alerta() {
+        var cod = document.getElementById("codigo").value;
+
+        var request = new XMLHttpRequest();
+        
+        var dominio = window.location.origin;
+        console.log(dominio);
+        var url = dominio+"/Shopping/Obtener?codigo=" + encodeURIComponent(cod);
+
+        request.responseType = 'json';
+        request.open("GET", url);
+
+        request.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                var response = request.response;
+                console.log("response: ", response);
+                document.getElementById("idNameDetails").value = response.nombreArticulo;
+                document.getElementById("idQuatityDetails").value = 0;
+            }
+        };
+
+        request.send();
+    };    
+
+    var boton = document.getElementById("idAdd");
+    var producto = document.getElementById("idNameDetails");
+
+    producto.addEventListener("input", function () {
+        boton.disabled = (producto.value === null || cantidad.value === "") ? true : false;
+    });
+
+    document.getElementById("idAdd").addEventListener("click", function () {
+        var producto = document.getElementById("idNameDetails").value
+        var codigo = document.getElementById("idCodeDetails").value;
+        var cantidad = document.getElementById("idQuatityDetails").value;
+        var precio = document.getElementById("idprecio").value;
+        var IVA = precio * 0.13;
+        var total = precio + IVA;
+
+        var newRow = "<tr><td>" + codigo + "</td><td>" + produto + "</td></tr>" + precio + "</td></tr>" + IVA + "</td></tr>" + cantidad + "</td></tr>" + total;
+
+        // document.getElementById("idFactura").getElementsByTagName('tbody')[0].innerHTML += newRow;
+
+        // document.getElementById("idNameDetails").value = "";
+        // document.getElementById("idCodeDetails").value = "";
+        // document.getElementById("idQuatityDetails").value = "";
+        // document.getElementById("idprecio").value = "";
+    });
+</script>

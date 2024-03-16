@@ -1,0 +1,141 @@
+﻿@model TArticulo
+@{
+    var image = "/images/images/Venta.png";
+
+}
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-shopping" role="tabpanel">
+        <form>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card text-center">
+                        <div class="card-header ">
+                            <output id="imageShopping">
+                                <img src=@image class="mx-auto w-50" />
+                            </output>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-md-5">
+                    <div class="panel  panel-primary">
+                        <div class="panel-body">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                         data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col col-md-4 mb-1">
+                                                        <div class="form-group">
+                                                            <label>Codigo</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col col-md-8 mb-1">
+                                                        <div class="form-group">
+                                                            <input id="idCodigo" placeholder="" class="form-control" min="1" autocomplete="off" />
+                                                            <span class="text-danger"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col col-md-4 mb-1">
+                                                            <div class="form-group">
+                                                                <label>Nombre</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-md-8 mb-1">
+                                                            <div class="form-group">
+                                                                <input id="idNombreArticulo" placeholder="" class="form-control" autofocus autocomplete="off" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col col-md-4 mb-1">
+                                                                <div class="form-group">
+                                                                    <label>Precio</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col col-md-8 mb-1">
+                                                                <div class="form-group">
+                                                                    <input id="idPrecioArticulo" placeholder="" class="form-control" autocomplete="off"  />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <div class="row">
+                                                                <div class="col col-md-6 mb-1">
+                                                                    <div class="form-group">
+                                                                        <label>Aplicar IVA (13%)</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col col-md-4 mb-1">
+                                                                    <div class="form-group">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="idAplicarIVA" checked />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="form-group">
+                                                                    <div class="col-md-12">
+                                                                        <button id="guardarBtn" class="btn btn-primary btn-block" onclick="clickGuardar()">Agregar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+
+<script>
+//document.getElementById("guardarBtn").addEventListener("click", function () {
+   function clickGuardar() {
+
+        var codigo = document.getElementById("idCodigo").value;
+        var nombre = document.getElementById("idNombreArticulo").value;
+        var precio = document.getElementById("idPrecioArticulo").value;
+        var checkbox = document.getElementById("idAplicarIVA");
+        var total = IVA === 1 ? precio * 0.13 : precio;
+        var IVA = checkbox.ariaChecked ? 1 : 0;
+
+       console.log("as6d4asd9as8d76as4d69");
+
+        //alert(model.value + " - " + codigo + " - " + nombre + " - " + precio + " - " + total + " - " + IVA);
+
+
+        // var articulo{
+        //     Codigo: codigo,
+        //     NombreArticulo: nombre,
+        //     PrecioArticulo: precio,
+        //     AplicarIVA: IVA,
+        //     PrecioConIVA: total
+        // };
+        // alert(articulo);
+        // $.ajax({
+        //     type: "POST",
+        //     url: "/Shopping/NuevoArticulo",
+        //     data: articulo,
+        //     success: function (response) {
+        //         alert("Articulo guardado con exito.");
+        //     },
+        //     error: function (xhr, status, error) {
+        //         alert("Error al guardar el articulo.");
+        //     }
+        //          alert("pasò por ajax.");
+        // });
+    }
+    //);
+</script>

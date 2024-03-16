@@ -1,0 +1,26 @@
+﻿@model TArticulo
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-gray border-bottom  mb-3">
+        <div class="container">
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Principal" asp-action="Principal">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Shopping" asp-action="Shopping">Articulos</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Factura" asp-action="Factura">Factura</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <h2>Articulos para venta</h2>
+    @Html.Partial("NuevoArticulo")
+    </div>
+
+@Html.Partial("Listar")

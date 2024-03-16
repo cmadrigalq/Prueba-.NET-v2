@@ -1,0 +1,205 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\css\\landingPage.css",
+      "PackagePath": "staticwebassets\\css\\landingPage.css"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\images\\Login.jpg",
+      "PackagePath": "staticwebassets\\images\\Login.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\images\\images\\Venta.jpg",
+      "PackagePath": "staticwebassets\\images\\images\\Venta.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\images\\images\\Venta.png",
+      "PackagePath": "staticwebassets\\images\\images\\Venta.png"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\images\\images\\Ventas.jfif",
+      "PackagePath": "staticwebassets\\images\\images\\Ventas.jfif"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\images\\images\\Ventas.jpg",
+      "PackagePath": "staticwebassets\\images\\images\\Ventas.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\images\\images\\factura.jpg",
+      "PackagePath": "staticwebassets\\images\\images\\factura.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\images\\logo-page.png",
+      "PackagePath": "staticwebassets\\images\\logo-page.png"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\js\\Shopping.js",
+      "PackagePath": "staticwebassets\\js\\Shopping.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\js\\function.js",
+      "PackagePath": "staticwebassets\\js\\function.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mmq_8\\source\\repos\\enviar a otra PC\\SalesSystem GIT\\SalesSystem LAST\\SalesSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.SalesSystem.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.SalesSystem.props",
+      "PackagePath": "build\\SalesSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.SalesSystem.props",
+      "PackagePath": "buildMultiTargeting\\SalesSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.SalesSystem.props",
+      "PackagePath": "buildTransitive\\SalesSystem.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
