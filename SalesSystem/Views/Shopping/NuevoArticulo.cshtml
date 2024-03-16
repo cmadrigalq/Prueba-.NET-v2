@@ -33,7 +33,7 @@
                                                     </div>
                                                     <div class="col col-md-8 mb-1">
                                                         <div class="form-group">
-                                                            <input id="idCodigo" placeholder="" class="form-control" min="1" autocomplete="off" />
+                                                            <input id="idCodigo" placeholder="" class="form-control" min="1" autofocus autocomplete="off" />
                                                             <span class="text-danger"></span>
                                                         </div>
                                                     </div>
@@ -47,7 +47,7 @@
                                                         </div>
                                                         <div class="col col-md-8 mb-1">
                                                             <div class="form-group">
-                                                                <input id="idNombreArticulo" placeholder="" class="form-control" autofocus autocomplete="off" />
+                                                                <input id="idNombreArticulo" placeholder="" class="form-control" autocomplete="off" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -60,7 +60,7 @@
                                                             </div>
                                                             <div class="col col-md-8 mb-1">
                                                                 <div class="form-group">
-                                                                    <input id="idPrecioArticulo" placeholder="" class="form-control" autocomplete="off"  />
+                                                                    <input id="idPrecioArticulo" placeholder="" class="form-control" autocomplete="off" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -96,46 +96,41 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </form>
     </div>
 </div>
 
 <script>
-//document.getElementById("guardarBtn").addEventListener("click", function () {
-   function clickGuardar() {
 
+    function clickGuardar() {
+
+        // Obtener los valores de los campos del formulario
         var codigo = document.getElementById("idCodigo").value;
         var nombre = document.getElementById("idNombreArticulo").value;
         var precio = document.getElementById("idPrecioArticulo").value;
-        var checkbox = document.getElementById("idAplicarIVA");
-        var total = IVA === 1 ? precio * 0.13 : precio;
-        var IVA = checkbox.ariaChecked ? 1 : 0;
+        var aplicarIVA = document.getElementById("idAplicarIVA").checked;
 
-       console.log("as6d4asd9as8d76as4d69");
+        var request = new XMLHttpRequest();
+        var dominio = window.location.origin;
+        console.log(dominio);
+        var url = dominio + "/Shopping/NuevoArticulo";
+        var data = {
+            Codigo: codigo,
+            NombreArticulo: nombre,
+            PrecioArticulo: precio,
+            AplicarIVA: aplicarIVA,
+            PrecioConIVA: precio * 0.13,
+            ErrorMessage: ""
+        };
 
-        //alert(model.value + " - " + codigo + " - " + nombre + " - " + precio + " - " + total + " - " + IVA);
+        console.log("data:", data);
+
+        request.open("POST", url);
+        request.setRequestHeader("Content-Type", "application/json");
+        request.send(JSON.stringify(data));
 
 
-        // var articulo{
-        //     Codigo: codigo,
-        //     NombreArticulo: nombre,
-        //     PrecioArticulo: precio,
-        //     AplicarIVA: IVA,
-        //     PrecioConIVA: total
-        // };
-        // alert(articulo);
-        // $.ajax({
-        //     type: "POST",
-        //     url: "/Shopping/NuevoArticulo",
-        //     data: articulo,
-        //     success: function (response) {
-        //         alert("Articulo guardado con exito.");
-        //     },
-        //     error: function (xhr, status, error) {
-        //         alert("Error al guardar el articulo.");
-        //     }
-        //          alert("pasò por ajax.");
-        // });
     }
-    //);
+
 </script>

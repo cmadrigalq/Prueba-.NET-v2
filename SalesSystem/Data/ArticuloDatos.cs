@@ -31,7 +31,7 @@ namespace SalesSystem.Data
                             Codigo = dr["Codigo"].ToString(),
                             NombreArticulo = dr["NombreArticulo"].ToString(),
                             PrecioArticulo = Convert.ToDecimal(dr["PrecioArticulo"]),
-                            AplicarIVA = Convert.ToByte(dr["AplicarIVA"]),
+                            AplicarIVA = Convert.ToBoolean(dr["AplicarIVA"]),
                             PrecioConIVA = Convert.ToDecimal(dr["PrecioConIVA"])
                         });
                     }
@@ -63,7 +63,7 @@ namespace SalesSystem.Data
                         oArticulo.Codigo = dr["Codigo"].ToString();
                         oArticulo.NombreArticulo = dr["NombreArticulo"].ToString();
                         oArticulo.PrecioArticulo = Convert.ToDecimal(dr["PrecioArticulo"]);
-                        oArticulo.AplicarIVA = Convert.ToByte(dr["AplicarIVA"]);
+                        oArticulo.AplicarIVA = Convert.ToBoolean(dr["AplicarIVA"]);
                         oArticulo.PrecioConIVA = Convert.ToDecimal(dr["PrecioConIVA"]);
                     }
                 }
