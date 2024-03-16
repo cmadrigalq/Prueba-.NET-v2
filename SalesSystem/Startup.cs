@@ -13,7 +13,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SalesSystem.Data;
-using SalesSystem.Repositorio;
 
 namespace SalesSystem
 {
@@ -38,7 +37,6 @@ namespace SalesSystem
 
             services.AddControllersWithViews();
             services.AddRazorPages();
-            services.AddScoped<IAPIService, RepServiceAPI>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,7 +57,6 @@ namespace SalesSystem
             app.UseStaticFiles();
 
             app.UseRouting();
-            app.UseCors();
 
             app.UseAuthentication();
             app.UseAuthorization();
