@@ -1,15 +1,8 @@
-﻿using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.AspNetCore.Mvc;
 using SalesSystem.Data;
 using SalesSystem.Models;
-using System.Collections.Generic;
-using System.Data;
-using System;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace SalesSystem.Controllers
 {
@@ -24,11 +17,11 @@ namespace SalesSystem.Controllers
 
         }
         [HttpGet]
-        public ActionResult Listar()
+        public List<TArticulo> Listar()
         {
             var oLista = _ArticuloDatos.Listar();
 
-            return View(oLista);
+            return oLista;
         }
 
         [HttpPost]

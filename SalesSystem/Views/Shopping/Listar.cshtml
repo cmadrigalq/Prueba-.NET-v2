@@ -1,4 +1,4 @@
-﻿<div class="container" onload="onPageLoad()">
+﻿<div class="container" >
     <div class="card">
         <div class="card-body">
             <div class="tab-content" id="nav-tabContent">
@@ -54,6 +54,11 @@
 </div>
 
 <script>
+
+    window.onload = function () {
+        onPageLoad();
+    };
+
     function onPageLoad() {
         console.log("probando");
 
@@ -70,16 +75,18 @@
             if (this.readyState === 4 && this.status === 200) {
                 var response = request.response;
                 console.log("response: ", response);
-                data.forEach(function (dato) {
+                
+                response.forEach(function (dato) {
                     $('#lista_articulos tbody').append(`
-                            <tr>
-                                    <td>${dato.Codigo}</td>
-                                    <td>${dato.NombreArticulo}</td>
-                                    <td>${dato.PrecioArticulo}</td>
-                                    <td>${dato.AplicarIVA}</td>
-                                    <td>${dato.PrecioConIVA}</td>
-                            </tr>
-                            `); console.log("dato" + dato);
+                        <tr>
+                            <td>${dato.codigo}</td>
+                            <td>${dato.nombreArticulo}</td>
+                            <td>${dato.precioArticulo}</td>
+                            <td>${dato.aplicarIVA}</td>
+                            <td>${dato.precioConIVA}</td>
+                        </tr>
+                    `); 
+                    console.log("dato" + dato);
                 });
             }
         };

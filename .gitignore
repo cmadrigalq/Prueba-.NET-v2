@@ -39,3 +39,4 @@
 /.vs/SalesSystem/config/applicationhost.config
 *.vsidx
 /SalesSystem/obj/Debug/net6.0/project.razor.vs.bin
+/.vs/SalesSystem/DesignTimeBuild/.dtbcache.v2
